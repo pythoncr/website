@@ -17,3 +17,7 @@ gem install mailcatcher --no-ri --no-rdoc
 mailcatcher --ip=0.0.0.0
 
 ENJOY!!
+
+create role pythoncr with login password 'pythoncr';
+create database pythoncr;
+grant all on database pythoncr to pythoncr;

@@ -4,6 +4,7 @@ from django.core.mail import send_mail
 from django.shortcuts import render
 from django.views import View
 
+
 class HomeView(View):
 
     template = 'website/home.html'
@@ -17,8 +18,8 @@ class HomeView(View):
             request,
             self.template,
             {
-                'subscribe_form':subscribe_form,
-                'contact_form':contact_form
+                'subscribe_form': subscribe_form,
+                'contact_form': contact_form
             }
         )
 
@@ -58,7 +59,7 @@ class HomeView(View):
             request,
             self.template,
             {
-                'subscribe_form':subscribe_form,
-                'contact_form':contact_form
+                'subscribe_form': subscribe_form,
+                'contact_form': contact_form
             }
         )
